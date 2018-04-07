@@ -15,9 +15,18 @@ export class ExemplosPipesComponent implements OnInit {
     dataLancamento: new Date(2016, 5, 23),
     url: 'http://a.co/i6oGruv'
   };
+
+  livros: string[] = ['C#', 'Angular 2'];
+
+  filtro: string;
+
   constructor() { }
 
   ngOnInit() {
+  }
+
+  addCurso(value){
+    this.livros.push(value);
   }
 
 }
